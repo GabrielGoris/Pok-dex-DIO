@@ -1,0 +1,184 @@
+
+.pokemons {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 0 0;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 1rem;
+
+}
+
+.pokemon .detail .img .button{
+    opacity: 0;
+}
+
+.pokemon .number {
+    color: #000;
+    opacity: .3;
+    text-align: right;
+    font-size: .625rem;
+}
+
+.pokemon .name{
+    color: #fff;
+    margin: .25rem 0;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.pokemon .detail .types .type{
+    border: solid 1px;
+    color: #fff;
+    padding: 0.3rem 1.2rem;
+    margin: 0.125rem;
+    font-size: .825rem;
+    border-radius: 1rem;
+    border-color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.pokemon .detail img {
+    align-self: flex-end;
+    max-width: 100%;
+    height: 85px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    background-color: #6c79db;
+    box-shadow: -2px 3px 0 #021257;
+    color: #fff;
+    border: none;
+    border-radius: 16rem;
+    width: 15%;
+    }
+
+.pagination :active {
+box-shadow: inset -4px 4px 0 #222;
+font-size: .9rem;
+}
+
+.normal{
+    background-color: #a6a877;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.grass{ 
+    background-color: #77c850;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png');
+}
+.fire{ 
+    background-color: #ee7f30;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.water{ 
+    background-color: #678fee;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.electric{ 
+    background-color: #f7cf2e;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.ice{ 
+    background-color: #98d5d7;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.ground{
+    background-color: #dfbf69;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.flying{ 
+    background-color: #a98ff0;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.poison{
+    background-color: #a040a0;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.fighting{ 
+    background-color: #bf3029;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.psychic{ 
+    background-color: #f65687;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.dark{ 
+    background-color: #725847;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.rock{ 
+    background-color: #b8a137;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.bug{ 
+    background-color: #a8b720;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.ghost{
+     background-color: #6e5896;
+     background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.steel{ 
+    background-color: #b9b7cf;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.dragon{ 
+    background-color: #6f38f6;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+.fairy{ 
+    background-color: #f9aec7;
+    background-image: url('https://icons.veryicon.com/png/o/object/material_design_icons/pokeball-2.png')
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
